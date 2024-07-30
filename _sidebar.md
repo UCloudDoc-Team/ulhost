@@ -1,6 +1,8 @@
+[概览](/ulhost/README)
 
 * 动态与公告
-    * [新功能发布记录](/ulhost/release_notes.md)
+    * [新功能发布记录](/ulhost/notice/New_Feature)
+    * [镜像更新记录](/ulhost/notice/mirror)
 
 * 产品简介
     * [产品概述](/ulhost/introduction/Concept.md)
