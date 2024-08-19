@@ -31,7 +31,7 @@ PRO套餐提供更为优质的独享IP。
   		<td> 74</td>
   	</tr>
   	<tr>
-  		<td  rowspan = "2"> <b>洛杉矶、胡志明、新加坡、马尼拉、伦敦<b> </td>
+  		<td  rowspan = "2"> <b>洛杉矶、胡志明市、新加坡、马尼拉、伦敦<b> </td>
   		<td> PRO</td>
   		<td> 1</td>
   		<td> 2</td>
