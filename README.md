@@ -9,7 +9,7 @@
     * [产品优势](/ulhost/introduction/Advantage)
     * [跨境电商专区](/ulhost/introduction/Cross)
     * [与云主机UHost对比](/ulhost/introduction/Compare)
-     * 使用限制
+    * 使用限制
          * [通用限制](/ulhost/introduction/Limit/Common)
          * [跨境电商专区限制](/ulhost/introduction/Limit/Cross)
 
