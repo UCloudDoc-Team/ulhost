@@ -21,3 +21,6 @@
          * [跨境电商专区](/ulhost/buy/price/cross)
          * [套餐外超额流量定价](/ulhost/buy/price/traffic)
      * [资源过期回收](/ulhost/buy/recycle)
+* 操作指南
+     * 跨境电商专区
+         * [查看代理IP地址配置信息](/ulhost/guide/cross)
