@@ -14,7 +14,7 @@
 | ------------ | -------------------------------------------------- | ------------------------------------------------------------ |
 | **镜像描述** | 仅包含初始操作系统，不包含任何应用数据和环境配置。 | 包含基础的操作系统，并预装了部分应用软件及应用依赖的运行环境和相关的初始化配置文件。 |
 | **适用场景** | 用户根据业务需求自行安装应用。                     | 快速部署应用，开箱即用，无需手动安装应用。                   |
-| **包含镜像** | CentOS<br>Ubuntu<br>Windows<br>Debian<br>Rocky                     | WordPress<br>ChatGPT-web<br>Palworld-server<br>宝塔<br>我的世界<br>我的世界-server |
+| **包含镜像** | CentOS<br>Ubuntu<br>Windows<br>Debian<br>Rocky                     | WooCommerce<br>WordPress<br>ChatGPT-web<br>Palworld-server<br>宝塔<br>我的世界<br>我的世界-server |
 
 ## 网络
 
