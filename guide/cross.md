@@ -10,7 +10,7 @@ curl http://100.80.80.80/user-data
 ```
 ![image](/images/PROXY_IP_centos.png)
 
-**使用官方应用镜像时会为您预设好相应的Redsocks配置**
+**使用官方应用镜像时会为您预设好相应的代理IP配置**
 配置地址：
 ```Plain
 cat /etc/redsocks/redsocks.conf 
@@ -25,7 +25,7 @@ cat /etc/redsocks/redsocks.conf
 http://100.80.80.80/user-data
 ```
 ![image](/images/PROXY_IP_windows.png)
-**使用官方应用镜像时会为您预设好相应的Redsocks配置**
+**使用官方应用镜像时会为您预设好相应的代理IP配置**
 配置地址：
 ```Plain
 C: /Program Files/v2ray/config.json
