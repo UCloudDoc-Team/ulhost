@@ -20,6 +20,7 @@ cat /etc/redsocks/redsocks.conf
 
 ## Windows
 **当使用系统镜像或自制镜像时，需要自行查看Socks5配置信息并完成代理配置**
+
 登录主机后打开浏览器访问如下地址，查看Socks5配置信息：
 ```Plain
 http://100.80.80.80/user-data
