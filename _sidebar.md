@@ -28,5 +28,5 @@
      * AI应用专区
          * [云上OpenClaw快速接入飞书](/ulhost/guide/openclaw_feishu)
          * [云上OpenClaw快速接入QQ](/ulhost/guide/openclaw_qq)
-         * [云上OpenClaw快速接入企业微信](/ulhost/guide/openclaw_WeCom)
+         * [云上OpenClaw快速接入企业微信](/ulhost/guide/openclaw_wecom)
          * [云上OpenClaw快速接入钉钉](/ulhost/guide/openclaw_dingding)

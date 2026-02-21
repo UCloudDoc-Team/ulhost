@@ -29,7 +29,7 @@
 2. 在页面中找到 **“App ID”** 和 **“App Secret”** 两个参数，分别点击右侧 **“复制”** 按钮，将其保存到个人记事本或备忘录中（注意数据安全，勿泄露），后续步骤中需要使用。
 ![image](/images/feishu4.png)
 
-## 为OpenClaw配置模型和Channel
+## 为OpenClaw配置模型和通道
 ### 应用管理
 选择相应的轻量应用云主机并进入详情页，点击**应用管理**即可对AIAgent进行配置。
 ![image](/images/appconf.png)
@@ -38,9 +38,9 @@
 为OpenClaw配置模型API Key，[UModelVerse](https://docs.ucloud.cn/modelverse/README) 旨在为客户提供快速搭建 AGI 应用的能力。仅需一个 API Key，即可轻松接入 OpenAI、Gemini 兼容的 API 接口，快速构建您的专属 AGI 应用，[ModelVerse 控制台](https://console.ucloud.cn/modelverse/experience/api-keys)
 
 ### 通道配置（配置飞书机器人App ID和App Secret）
-1. 在通道配置处点击**添加**，进入通道添加页面“Channel配置”**输入框，选择**“飞书”**，输入前面步骤中查询到的飞书机器人的App ID和App Secret。
-2. 选择**飞书**，输入前面步骤中查询到的飞书机器人的App ID和App Secret，并点击确定完成添加。
-3. 等待几十秒后查看状态，确保你的飞书显示**运行中**。
+1. 在应用管理的通道配置输入框中，输入前面步骤中查询到的飞书机器人的App ID和App Secret，并点击确定完成添加。
+2. 点击应用并确认操作，等待几十秒完成配置；
+3. 等待几十秒后查看状态，确保你的飞书通道显示**运行中**。
 ![image](/images/feishu_status.png)
 
 
@@ -117,29 +117,6 @@
 ![image](/images/feishu_release3.png)
 ## 与飞书机器人进行交互
 完成前面的步骤之后，您可以与飞书机器人进行单独聊天，或者将飞书机器人添加进群聊。
-
-### 单独聊天
-以电脑版飞书软件为例（手机端飞书的操作类似），登录飞书后，点击搜索框。
 ![image](/images/feishu_bot1.png)
-在搜索框中输入前面步骤中创建并发布的飞书机器人的应用名称，输入回车进行搜索。
 ![image](/images/feishu_bot2.png)
-![image](/images/feishu_bot3.png)
-首次对话会如果提示如下图所示的配对请求，可以复制机器人回复的最后一行命令行。
-![image](/images/feishu_bot4.png)
-接下来需要ssh登录到轻量应用云主机，在终端中粘贴上一步中复制的命令行，点击回车执行命令。命令完成执行后会提示配对成功。
-![image](/images/feishu_bot5.png)
-接下来继续尝试与该机器人进行对话，如果机器人以AI的方式进行回复，即说明配对成功。
-
-### 群聊添加飞书机器人
-对于群组聊天的场景，可以点击飞书搜索框上方的加号，选择创建群组，并完成创建。
-![image](/images/feishu_bot6.png)
-进入新创建的群组，点击右上角的设置。
-![image](/images/feishu_bot7.png)
-在设置中选择“群机器人”，点击添加机器人。
-![image](/images/feishu_bot8.png)
-在上方搜索框搜索您创建的机器人的应用名称。
-![image](/images/feishu_bot9.png)
-选择您之前创建的机器人后，点击添加即可将飞书机器人加入群聊，示例如下所示。
-![image](/images/feishu_bot10.png)
-到这里就初步完成了配置，在手机版飞书和电脑版飞书上均可以开始与已经接入OpenClaw的飞书机器人进行聊天。
-注意：机器人只能被添加进同一企业下的群聊，外部群无法添加机器人。
+更多场景欢迎大家探索和解锁。

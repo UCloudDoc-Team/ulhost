@@ -1,34 +1,51 @@
-# 跨境电商专区
+# AI应用专区
 
-# Socks5配置信息查询
-## CentOS/Debian
-**当使用系统镜像或自制镜像时，需要自行查看Socks5配置信息并完成代理配置**
+# 云上OpenClaw(Clawdbot)快速接入钉钉指南
+## 概述
+本文主要介绍在UCloud轻量应用云主机中部署完成OpenClaw后如何配置接入钉钉机器人。
 
-登录主机后输入命令，查看Socks5配置信息：  
-```Plain
-curl http://100.80.80.80/user-data
-```
-![image](/images/PROXY_IP_centos.png)
+## 前置准备工作
+在正式开始为OpenClaw(Clawdbot)配置接入飞书机器人之前，请您依次检查如下事项是否准备完成：
+1. 您已经拥有一个具有企业管理员权限的钉钉账号。
+2. 是否已经购买预装OpenClaw镜像的UCloud轻量应用云主机。
 
-**使用官方应用镜像时会为您预设好相应的代理IP配置**
-配置地址：
-```Plain
-cat /etc/redsocks/redsocks.conf 
-```
-![image](/images/2.png)
+## 接入钉钉
+
+### 申请并创建钉钉应用
+1. 使用具有企业管理员权限的钉钉账号，登录[钉钉开发者平台](https://open-dev.dingtalk.com/fe/app?hash=%23%2Fcorp%2Fapp#/corp/app)。
+2. 在开发者平台首页的**应用开发**板块，点击**创建应用**，选择**企业内部应用**下的**机器人**类型。
+3. 按要求填写应用基础信息，完成必填项配置（其余项默认即可），点击保存进入应用管理页面。
+
+### 配置机器人应用能力
+1. 在钉钉应用管理页面，找到添加应用能力按钮，点击后选择对应能力完成配置，核心配置机器人相关信息：
+    机器人名称：默认使用应用名称；
+    机器人图标：上传 JPG/PNG 格式、240*240px 以上、1:1 比例、2MB 以内的无角图标；
+    机器人简介：简要描述机器人信息，最多 10 个字符（添加机器人时展示给用户）；
+    机器人描述：描述机器人功能，最多 200 字符（机器人名片及添加时展示）。
+2. 配置完成后，点击页面中的**查看版本详情**，进入版本管理配置页面。
+
+### 发布钉钉应用版本
+1. 在版本详情页面，填写**应用版本号**（示例：1.0.0）和**版本描述**，选择**应用可用范围**（全部员工 / 部分员工 / 仅限管理员 / 仅我可见）。
+2. 填写完成后点击**保存**，在弹出的确认窗口中点击**确认发布**，本次发布为免审状态，提交后将自动通过并线上生效。
+
+### 获取 Client ID 和 Client Secret
+1. 回到钉钉应用管理页面，点击左侧导航栏的**凭证与基础信息**。
+2. 在**应用凭证**板块，找到**Client ID (原 AppKey 和 SuiteKey)和Client Secret (原 AppSecret 和 SuiteSecret)**，分别复制并保存至记事本 / 备忘录（注意数据安全，勿泄露），后续配置需使用。
+
+## 为OpenClaw配置模型和通道
+### 应用管理
+选择相应的轻量应用云主机并进入详情页，点击**应用管理**即可对AIAgent进行配置。
+![image](/images/appconf.png)
+
+### 模型配置
+为OpenClaw配置模型API Key，[UModelVerse](https://docs.ucloud.cn/modelverse/README) 旨在为客户提供快速搭建 AGI 应用的能力。仅需一个 API Key，即可轻松接入 OpenAI、Gemini 兼容的 API 接口，快速构建您的专属 AGI 应用，[ModelVerse 控制台](https://console.ucloud.cn/modelverse/experience/api-keys)
+
+### 通道配置（配置钉钉机器人 Client ID 与 Client Secret）
+1. 在应用管理的通道配置输入框中，输入此前在钉钉开发者平台获取的Client ID和Client Secret。
+2. 点击应用并确认操作，等待几十秒完成配置；
+3. 等待几十秒后查看状态，确保你的钉钉通道显示**运行中**。
 
 
-## Windows
-**当使用系统镜像或自制镜像时，需要自行查看Socks5配置信息并完成代理配置**
-
-登录主机后打开浏览器访问如下地址，查看Socks5配置信息：
-```Plain
-http://100.80.80.80/user-data
-```
-![image](/images/PROXY_IP_windows.png)
-**使用官方应用镜像时会为您预设好相应的代理IP配置**
-配置地址：
-```Plain
-C: /Program Files/v2ray/config.json
-```
-![image](/images/3.png)
+## 在钉钉中与钉钉机器人互动
+配置钉钉机器人的Client ID与Client Secret之后，您可以在钉钉软件中尝试和已经打通OpenClaw的钉钉机器人进行单独聊天。
+首先在钉钉软件的搜索框中，输入前面步骤中创建的钉钉机器人的“应用名称”，添加之后即可开始对话。如果钉钉机器人能够以AI的方式对话，则说明您已经成功完成OpenClaw应用接入钉钉机器人。
