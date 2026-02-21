@@ -98,4 +98,10 @@
 完成前面的步骤之后，您可以与飞书机器人进行单独聊天，或者将飞书机器人添加进群聊。
 ![image](/images/feishu_bot1.png)
 ![image](/images/feishu_bot2.png)
+
+**提示**：如果首次对话提示如下图所示的配对请求，可以复制机器人回复的最后一行命令行，从控制台登陆到部署openclaw的轻量应用云主机，将命令行粘贴并按回车执行，待命令执行后会提示配对成功。
+![image](/images/feishu_peidui1.png)
+![image](/images/feishu_peidui2.png)
+![image](/images/feishu_peidui3.png)
+
 更多场景欢迎大家探索和解锁。
