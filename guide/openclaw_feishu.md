@@ -63,6 +63,7 @@
 ![image](/images/feishu_conf6.png)  
 #### 权限说明
 一、基础权限
+
 | 权限范围 (Scope)                          | 权限类型 (Permission) | 功能描述 (Description)       |
 |-------------------------------------------|------------------------|------------------------------|
 | contact:user.base:readonly                 | User info              | 获取基础用户信息             |
@@ -71,7 +72,9 @@
 | im:message.group_at_msg:readonly           | Group                  | 接收群内 @ 机器人的消息      |
 | im:message:send_as_bot                     | Send                   | 以机器人身份发送消息         |
 | im:resource                                | Media                  | 上传/下载图片/文件           |
+
 二、可选全功能权限
+
 | 权限范围 (Scope)                          | 权限类型 (Permission) | 功能描述 (Description)       |
 |-------------------------------------------|------------------------|------------------------------|
 | im:message.group_msg                       | Group                  | 读取群内所有消息（敏感）     |
