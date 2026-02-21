@@ -36,9 +36,11 @@
 
 ### 模型配置
 为OpenClaw配置模型API Key，[UModelVerse](https://docs.ucloud.cn/modelverse/README) 旨在为客户提供快速搭建 AGI 应用的能力。仅需一个 API Key，即可轻松接入 OpenAI、Gemini 兼容的 API 接口，快速构建您的专属 AGI 应用，[ModelVerse 控制台](https://console.ucloud.cn/modelverse/experience/api-keys)
+![image](/images/UModelVerse.png)
 
 ### 通道配置（配置飞书机器人App ID和App Secret）
 1. 在应用管理的通道配置输入框中，输入前面步骤中查询到的飞书机器人的App ID和App Secret，并点击确定完成添加。
+![image](/images/feishu_ID.png)
 2. 点击应用并确认操作，等待几十秒完成配置；
 3. 等待几十秒后查看状态，确保你的飞书通道显示**运行中**。
 ![image](/images/feishu_status.png)
@@ -52,62 +54,31 @@
 
    ⚠️**注意**：如果这一步报错提示**“未建立长连接”**，请检查自己的App ID和App Secret是否已正确配置。如果检查前面步骤中的机器人App ID和App Secret均已经正确配置，但点击保存后仍然报错“应用未建立长连接”，可以返回云主机应用管理页面，找到OpenClaw状态显示，点击“重启”按钮，重启网关服务，再返回飞书开放平台，点击保存事件配置，完成建立长连接。
 ![image](/images/app_restart.png)
-### 添加事件
-点击**事件配置**页面中的 **添加事件**，在弹出的列表中，搜索并添加 **接收消息**，点击 **确认添加**，按照指引确认开通权限。
-![image](/images/feishu_conf2.png)
-（推荐）若您期望将飞书机器人添加进聊天群组中使用，可以参考前述步骤继续添加更多群组相关权限，主要包括“消息已读”、“机器人进群”、“机器人被移出群”。否则，请跳过本步骤。
-![image](/images/feishu_conf3.png)
-完成添加后，可以在当前页面的列表中查看到已添加的事件。
-![image](/images/feishu_conf4.png)
 ### 回调配置
 在“事件与回调-回调配置”页面中，订阅方式选择 “使用长连接接收回调”，点击保存，无需填写其他地址，配置自动生效。
 ![image](/images/feishu_conf5.png)
 ### 权限配置
-在飞书应用管理页，左侧导航栏找到 “权限管理” ，点击进入页面。点击页面中的 “批量导入权限” 按钮，弹出权限导入窗口。
-![image](/images/feishu_conf6.png)
-![image](/images/feishu_conf7.png)
-复制以下代码，替换前面弹窗中原有的JSON内容，点击下一步，确认新增权限，继续申请开通，确认后等待权限导入完成。
-```Plain
-{
-  "scopes": {
-    "tenant": [
-      
-      "im:message",
-      "im:message.p2p_msg:readonly",
-      "im:message.group_at_msg:readonly",
-      "im:message:send_as_bot",
-      "im:resource",
-
-      
-      "contact:user.base:readonly",
-      "im:message.group_msg",
-      "im:message:readonly",
-      "im:message:update",
-      "im:message:recall",
-      "im:message.reactions:read",
-
-   
-      "docx:document:readonly",
-      "drive:drive:readonly",
-      "wiki:wiki:readonly",
-      "bitable:app:readonly",
-      "task:task:read",
-
-      "contact:contact.base:readonly",
-      "docx:document",
-      "docx:document.block:convert",
-      "drive:drive",
-      "wiki:wiki",
-      "bitable:app",
-      "task:task:write"
-    ],
-    "user": []
-  }
-}
-```
-权限导入完成后，可以在权限列表中查看已成功导入的权限。
-![image](/images/feishu_conf8.png)
-![image](/images/feishu_conf9.png)
+在飞书应用管理页，左侧导航栏找到 “权限管理” ，点击进入页面。
+可以按需开启权限，也可点击页面中的 “批量导入权限” 按钮，弹出权限导入窗口。
+![image](/images/feishu_conf6.png)  
+#### 权限说明
+一、基础权限
+| 权限范围 (Scope)                          | 权限类型 (Permission) | 功能描述 (Description)       |
+|-------------------------------------------|------------------------|------------------------------|
+| contact:user.base:readonly                 | User info              | 获取基础用户信息             |
+| im:message                                 | Messaging              | 收发消息                     |
+| im:message.p2p_msg:read only               | DM                     | 读取机器人的私信消息         |
+| im:message.group_at_msg:readonly           | Group                  | 接收群内 @ 机器人的消息      |
+| im:message:send_as_bot                     | Send                   | 以机器人身份发送消息         |
+| im:resource                                | Media                  | 上传/下载图片/文件           |
+二、可选全功能权限
+| 权限范围 (Scope)                          | 权限类型 (Permission) | 功能描述 (Description)       |
+|-------------------------------------------|------------------------|------------------------------|
+| im:message.group_msg                       | Group                  | 读取群内所有消息（敏感）     |
+| im:message:readonly                        | Read                   | 获取消息历史记录             |
+| im:message:update                          | Edit                   | 编辑/更新已发送的消息        |
+| im:message:recall                          | Recall                 | 撤回已发送的消息             |
+| im:message.reactions:read                  | Reactions              | 查看消息的互动反馈           |
 ## 创建版本并发布
 在飞书应用管理页，左侧导航栏找到 “版本管理与发布” ，点击进入页面。点击右上角的创建版本。
 ![image](/images/feishu_release1.png)
