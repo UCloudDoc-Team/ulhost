@@ -79,6 +79,9 @@
 | im:message:update                          | Edit                   | 编辑/更新已发送的消息        |
 | im:message:recall                          | Recall                 | 撤回已发送的消息             |
 | im:message.reactions:read                  | Reactions              | 查看消息的互动反馈           |
+
+**提示**：确保消息、机器人、事件订阅等相关权限均已开启。后续使用飞书机器人过程中也可以按需调整权限设置。
+
 ## 创建版本并发布
 在飞书应用管理页，左侧导航栏找到 “版本管理与发布” ，点击进入页面。点击右上角的创建版本。
 ![image](/images/feishu_release1.png)
@@ -86,6 +89,7 @@
 ![image](/images/feishu_release2.png)
 待飞书管理员通过发布审核。审核发布成功后，可以在“版本管理与发布”页面，查看到已经发布的版本号和状态。
 ![image](/images/feishu_release3.png)
+
 ## 与飞书机器人进行交互
 完成前面的步骤之后，您可以与飞书机器人进行单独聊天，或者将飞书机器人添加进群聊。
 ![image](/images/feishu_bot1.png)
