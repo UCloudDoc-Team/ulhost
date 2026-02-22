@@ -2,7 +2,7 @@
 
 # 云上OpenClaw(Clawdbot)快速接入企业微信应用指南
 ## 概述
-本文主要介绍在UCloud轻量应用云主机中部署完成OpenClaw后如何配置接入企业微信（WeCom）。
+本文主要介绍在UCloud轻量应用云主机中部署完成OpenClaw后如何配置接入企业微信应用（WeCom Agent）。
 
 当前文档仅适配镜像版本2026.2.17及以上版本，您可以在UCloud控制台轻量应用云主机详情页进行版本确认。
 
@@ -26,11 +26,15 @@
 
 ### 通道配置（配置飞书机器人App ID和App Secret）
 1. 在应用管理的通道配置添加企业微信应用通道，此处需要配置五个参数。
+    ![image](/images/qywxconf.png)
     **Corp ID**：在[企业微信管理后台](https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe%23%2Fprofile&objectId=2625147&objectType=1&contentType=rich)中，找到“我的企业-企业信息”页面，在页面底部找到**企业ID**并且复制，将复制好的企业ID，粘贴至OpenClaw配置面板中的对应位置（Corp ID）输入框。
     **Corp Secret**：在[企业微信管理后台](https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe%23%2Fprofile&objectId=2625147&objectType=1&contentType=rich)中，找到此前步骤新建的企业微信应用，单击进入应用详情。在应用详情页内，找到**Secret**，并点击查看按钮，在弹窗中点击**发送**。点击发送后，需要前往您的企业微信，此时会收到一条来自“企业微信团队”的消息，单击消息中的前往查看按钮，在弹窗内复制Secret。将复制好的Secret，粘贴至OpenClaw配置面板中的对应位置（Corp Secret）输入框中。
     **Agent ID**：在[企业微信管理后台](https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe%23%2Fprofile&objectId=2625147&objectType=1&contentType=rich)中，找到此前步骤新建的企业微信应用，单击进入应用详情。在应用详情页内，找到**Agent ID**，复制并粘贴至OpenClaw配置面板中的对应位置（Agent ID）输入框中。
     **Token和EncodingAESKey**：在企业微信管理后台的应用管理详情页，找到“功能-接收消息”，点击**设置API接收**。此处暂时不填写URL，先随机获取Token和EncodingAESKey，然后将这两个参数分别填入OpenClaw配置面板的对应位置输入框中。
-五个参数均填写完成，等待片刻完成配置后，可以看到已接入通道中企业微信应用显示“运行中”状态。
+    ![image](/images/qywxconf2.png)
+    ![image](/images/qywxconf3.png)
+
+    五个参数均填写完成，等待片刻完成配置后，可以看到已接入通道中企业微信应用显示“运行中”状态。
 2. 返回之前配置URL的应用管理页面，参考以下步骤来配置URL。
 
 #### URL填写方式一：使用公网IP地址组成URL链接
