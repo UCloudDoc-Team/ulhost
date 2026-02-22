@@ -1,6 +1,6 @@
 # AI应用专区
 
-# 云上OpenClaw(Clawdbot)快速接入企业微信指南
+# 云上OpenClaw(Clawdbot)快速接入企业微信应用指南
 ## 概述
 本文主要介绍在UCloud轻量应用云主机中部署完成OpenClaw后如何配置接入企业微信（WeCom）。
 
