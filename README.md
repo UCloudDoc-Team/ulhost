@@ -29,4 +29,4 @@
          * [云上OpenClaw快速接入钉钉](/ulhost/guide/openclaw_dingding)
          * [云上OpenClaw快速接入企业微信机器人](/ulhost/guide/openclaw_wecombot)
          * [云上OpenClaw快速接入企业微信应用](/ulhost/guide/openclaw_wecomagent)
-         * [云上OpenClaw模型&通道&skills配置说明](/ulhost/guide/openclaw_conf) 
+         * [云上OpenClaw快速部署说明](/ulhost/guide/openclaw_conf) 
