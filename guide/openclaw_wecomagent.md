@@ -64,7 +64,7 @@ http://轻量应用云主机的公网IP地址:18789/wecom/bot
 
 将您的域名替换到下面的URL链接中，并且填入到企业微信管理页面的URL输入框中。
 ```Plain
-http://您的域名:18789/wecom/bot
+http://您的域名:18789/wecom/agent
 ```
 **注意**：URL需要使用http而非https，并使用英文冒号，并且加上端口号（默认为18789）和 /wecom/agent 。
 
