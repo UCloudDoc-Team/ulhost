@@ -38,7 +38,8 @@ http://轻量应用云主机的公网IP地址:18789/wecom/bot
 1. 您的企业微信已经进行了企业认证，则在创建机器人配置URL时，必须要配置已经完成备案的域名，并且域名的备案主体需要和企业微信认证企业一致或者有关联关系，否则会提示”域名主体校验未通过，需配置备案主题与当前企业主体相同或有关联关系的域名”。
 2. 您已经拥有一个满足企业微信要求的已备案域名（域名备案主体和认证企业一致），并且您的域名已经DNS解析到部署了OpenClaw的轻量应用云主机实例公网IP。
 **URL配置**：
-首先回到OpenClaw**应用管理**页面，[防火墙放行18789端口](https://docs.ucloud.cn/ulhost/guide/openclaw_conf?id=%e9%98%b2%e7%81%ab%e5%a2%99%e6%94%be%e8%a1%8c%e7%ab%af%e5%8f%a3)，并生成管理员token，启用OpenClaw WebUI功能。
+
+首先回到OpenClaw**应用管理**页面，[防火墙放行18789端口](https://docs.ucloud.cn/ulhost/guide/openclaw_conf?id=%e9%98%b2%e7%81%ab%e5%a2%99%e6%94%be%e8%a1%8c%e7%ab%af%e5%8f%a3)，并**生成管理员token**，启用OpenClaw WebUI功能。
 ![image](/images/appconf_webui.png)
 
 将您的域名替换到下面的URL链接中，并且填入到企业微信管理页面的URL输入框中。
