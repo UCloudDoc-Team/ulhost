@@ -5,7 +5,7 @@
 本文档介绍了如何在UCloud轻量应用云主机上配置使用开源AI助手OpenClaw的完整流程。 
 
 部署过程主要包括：
-1. 在UCloud控制台创建使用最新版OpenClaw镜像的轻量应用云主机
+1. 在[UCloud控制台](https://console.ucloud.cn/light-server/create/)创建使用最新版OpenClaw镜像的轻量应用云主机
 2. 使用控制台整合的模型配置功能，结合[UModelVerse](https://docs.ucloud.cn/modelverse/README) 服务，仅需一个 API Key，轻松接入Qwen、DeepSeek、 OpenAI、Gemini 等主流大模型，快速构建您的专属 AGI 应用。
 3. 使用控制台整合的通道配置功能快速完成接入飞书、QQ、钉钉、企业微信机器人、企业微信应用。
 4. 使用控制台整合的skills配置功能快速安装[ClawHub](https://clawhub.ai/)已发布的skills。
