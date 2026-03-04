@@ -30,7 +30,7 @@
 选择相应的轻量应用云主机并进入详情页，点击**应用管理**即可对AIAgent进行配置。
 ![image](/images/appconf.png)
 
-在**应用管理**页面，找到**模型配置**，当前控制台仅支持接入[UModelVerse](https://docs.ucloud.cn/modelverse/README) 服务提供的各大主流大模型API能力。如您第一次使用请点击**立即创建**，到[UModelVerse 控制台](https://console.ucloud.cn/modelverse/experience/api-keys)创建API Key。
+在**应用管理**页面，找到**模型配置**，当前控制台仅支持接入[UModelVerse](https://docs.ucloud.cn/modelverse/README) 服务提供的各大主流大模型API能力。如您第一次使用请点击**立即创建**，到[ModelVerse 控制台](https://console.ucloud.cn/modelverse/experience/api-keys)创建API Key。
 ![image](/images/appconf_model.png)
 ![image](/images/appconf_model1.png)
 
