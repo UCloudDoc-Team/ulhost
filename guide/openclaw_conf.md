@@ -69,13 +69,13 @@
 ## 防火墙放行端口
 若需要修改防火墙配置，可找到对应轻量应用云主机点击**详情**进入详情页，点击**概览**在**基础信息**中查看当前防火墙配置。
 ![image](/images/appconf_fw1.png)
-若防火墙未放行您OpenClaw官网网站（Web UI）所配置的端口，则点击**修改防火墙**跳转到[外网防火墙](https://console.ucloud.cn/unet/ufirewall)页面新建一个放行相应端口的防火墙。快速复制**Web服务器推荐(22，3389，80，443)**。
+若防火墙未放行您OpenClaw官网网站（Web UI）所配置的端口，则点击**修改防火墙**跳转到[外网防火墙](https://console.ucloud.cn/unet/ufirewall)页面新建一个放行相应端口的防火墙。快速复制 *Web服务器推荐(22，3389，80，443)*。
 ![image](/images/appconf_fw2.png)
 ![image](/images/appconf_fw3.png)
 找到新建的防火墙，进入**详情**页面，点击添加规则，将对应窗口放行（本次演示使用默认端口18789）。
 ![image](/images/appconf_fw4.png)
 ![image](/images/appconf_fw5.png)
 ![image](/images/appconf_fw6.png)
-编辑好防火墙规则后，返回轻量应用云主机详情页，点击**概览**在**基础信息** 中将防火墙修改为已放行相应端口的新建防火墙即可。
+编辑好防火墙规则后，返回轻量应用云主机详情页，点击概览页面的**基础信息** 中将防火墙修改为已放行相应端口的新建防火墙即可。
 ![image](/images/appconf_fw7.png)
 
