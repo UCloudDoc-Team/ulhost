@@ -25,7 +25,7 @@
 ### 模型配置
 为OpenClaw配置模型API Key，[UModelVerse](https://docs.ucloud.cn/modelverse/README) 旨在为客户提供快速搭建 AGI 应用的能力。仅需一个 API Key，即可轻松接入 OpenAI、Gemini 兼容的 API 接口，快速构建您的专属 AGI 应用，[ModelVerse 控制台](https://console.ucloud.cn/modelverse/experience/api-keys)
 
-### 通道配置（配置飞书机器人App ID和App Secret）
+### 通道配置（配置飞企业微信应用相关参数）
 1. 在应用管理的通道配置添加企业微信应用通道，此处需要配置五个参数。
     ![image](/images/qywxconf.png)
 
