@@ -5,7 +5,7 @@
 本文主要介绍在UCloud轻量应用云主机中部署完成OpenClaw后如何配置接入企业微信智能机器人。
 
 当前文档仅适配预装OpenClaw-2026.3.7及以上版本的应用镜像，您可以在UCloud控制台轻量应用云主机详情页进行版本确认。
-![image](/images/appconf_os.png)
+![image](/images/appconf_os3_7.png)
 
 
 ## 前置准备工作
