@@ -10,3 +10,4 @@
 | 2024年7月 | 应用镜像 | 更新宝塔                             | 暂无     | 常规专区 |
 | 2024年7月 | 应用镜像 | 更新帕鲁                             | 暂无     | 常规专区 |
 | 2026年2月 | 应用镜像 | 上线OpenClaw应用镜像                             | [云上OpenClaw快速部署](https://docs.ucloud.cn/ulhost/guide/openclaw_conf)     | 常规专区 |
+| 2026年2月 | 应用镜像 | 更新OpenClaw 3.7版本镜像                             | [云上OpenClaw(Clawdbot)快速接入企业微信机器人](https://docs.ucloud.cn/ulhost/guide/openclaw_wecom)     | 常规专区 |
