@@ -30,9 +30,12 @@
 
 ### 模型配置
 为OpenClaw配置模型API Key，[UModelVerse](https://docs.ucloud.cn/modelverse/README) 旨在为客户提供快速搭建 AGI 应用的能力。仅需一个 API Key，即可轻松接入 OpenAI、Gemini 兼容的 API 接口，快速构建您的专属 AGI 应用，[ModelVerse 控制台](https://console.ucloud.cn/modelverse/experience/api-keys)
+![image](/images/tencentqq6.png)
+
 
 ### 通道配置（配置 QQ 机器人 AppID 和 AppSecret）
 1. 在应用管理的通道配置输入框中，输入此前在 QQ 开放平台获取的QQBot机器人 AppID和AppSecret；
+![image](/images/tencentqq5.png)
 2. 点击应用并确认操作，等待几十秒完成配置；
 3. 等待几十秒后查看状态，确保你的QQ通道显示**运行中**。
 
