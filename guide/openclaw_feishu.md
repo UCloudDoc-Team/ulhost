@@ -100,7 +100,7 @@
 | im:message.reactions:read                  | Reactions              | 查看消息的互动反馈           |
 
 **批量导入权限**： 如需批量导入权限，可复制以下内容进行配置
-```Plain
+```json
 {
   "scopes": {
     "tenant": [
