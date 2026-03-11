@@ -100,6 +100,49 @@
 | im:message.reactions:read                  | Reactions              | 查看消息的互动反馈           |
 
 **提示**：确保消息、机器人、事件订阅等相关权限均已开启。后续使用飞书机器人过程中也可以按需调整权限设置。
+**批量导入权限**：如需批量导入权限，可复制以下内容进行配置
+```Plain
+{
+  "scopes": {
+    "tenant": [
+      "aily:file:read",
+      "aily:file:write",
+      "application:application.app_message_stats.overview:readonly",
+      "application:application:self_manage",
+      "application:bot.menu:write",
+      "cardkit:card:write",
+      "contact:user.base:readonly",
+      "contact:user.employee_id:readonly",
+      "corehr:file:download",
+      "docs:document.content:read",
+      "event:ip_list",
+      "im:chat",
+      "im:chat.access_event.bot_p2p_chat:read",
+      "im:chat.members:bot_access",
+      "im:chat:read",
+      "im:message",
+      "im:message.group_at_msg:readonly",
+      "im:message.group_msg",
+      "im:message.p2p_msg:readonly",
+      "im:message:readonly",
+      "im:message:send_as_bot",
+      "im:resource",
+      "sheets:spreadsheet",
+      "wiki:wiki:readonly"
+    ],
+    "user": [
+      "aily:file:read",
+      "aily:file:write",
+      "contact:contact.base:readonly",
+      "im:chat.access_event.bot_p2p_chat:read"
+    ]
+  }
+}
+```
+![image](/images/feishu_conf7.png) 
+
+清空原有内容，并将刚刚复制的代码粘贴进去。
+![image](/images/feishu_conf8.png) 
 
 ## 创建版本并发布
 在飞书应用管理页，左侧导航栏找到 “版本管理与发布” ，点击进入页面。点击右上角的创建版本。
