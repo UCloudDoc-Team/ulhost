@@ -24,9 +24,10 @@
      * 跨境电商专区
          * [查看代理IP地址配置信息](/ulhost/guide/cross)
      * AI应用专区
-         * [云上OpenClaw快速部署说明](/ulhost/guide/openclaw_conf) 
+         * [云上OpenClaw快速部署说明](/ulhost/guide/openclaw_conf)
+         * [云上OpenClaw快速接入企业微信智能机器人](/ulhost/guide/openclaw_wecom)
          * [云上OpenClaw快速接入飞书](/ulhost/guide/openclaw_feishu)
          * [云上OpenClaw快速接入QQ](/ulhost/guide/openclaw_qq)
          * [云上OpenClaw快速接入钉钉](/ulhost/guide/openclaw_dingding)
-         * [云上OpenClaw快速接入企业微信智能机器人](/ulhost/guide/openclaw_wecom)
+
 

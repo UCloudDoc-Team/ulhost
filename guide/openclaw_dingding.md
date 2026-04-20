@@ -4,13 +4,13 @@
 ## 概述
 本文主要介绍在UCloud轻量应用云主机中部署完成OpenClaw后如何配置接入钉钉机器人。
 
-当前文档仅适配预装OpenClaw-2026.2.17及以上版本的应用镜像，您可以在UCloud控制台轻量应用云主机详情页进行版本确认。
+当前文档仅适配OpenClaw最新版应用镜像，您可以在UCloud控制台轻量应用云主机详情页进行版本确认。
 ![image](/images/appconf_os.png)
 
 ## 前置准备工作
 在正式开始为OpenClaw(Clawdbot)配置接入钉钉之前，请您依次检查如下事项是否准备完成：
 1. 您已经拥有一个具有企业管理员权限的钉钉账号。
-2. 您已经购买预装OpenClaw且镜像版本2026.2.17及以上版本的UCloud轻量应用云主机。
+2. 您已经购买预装OpenClaw最新应用镜像的轻量应用云主机。
 
 ## 接入钉钉
 
@@ -33,7 +33,7 @@
 
 ### 获取 Client ID 和 Client Secret
 1. 回到钉钉应用管理页面，点击左侧导航栏的**凭证与基础信息**。
-2. 在**应用凭证**板块，找到**Client ID (原 AppKey 和 SuiteKey)和Client Secret (原 AppSecret 和 SuiteSecret)**，分别复制并保存至记事本 / 备忘录（注意数据安全，勿泄露），后续配置需使用。
+2. 在**应用凭证**板块，找到**Client ID（原 AppKey 和 SuiteKey）**和**Client Secret（原 AppSecret 和 SuiteSecret）**，分别复制并保存至记事本/备忘录（注意数据安全，勿泄露），后续配置需使用。
 
 ## 为OpenClaw配置模型和通道
 ### 应用管理
@@ -41,14 +41,17 @@
 ![image](/images/appconf.png)
 
 ### 模型配置
-为OpenClaw配置模型API Key，[UModelVerse](https://docs.ucloud.cn/modelverse/README) 旨在为客户提供快速搭建 AGI 应用的能力。仅需一个 API Key，即可轻松接入 OpenAI、Gemini 兼容的 API 接口，快速构建您的专属 AGI 应用，[ModelVerse 控制台](https://console.ucloud.cn/modelverse/experience/api-keys)
+为OpenClaw配置模型API Key，[UModelVerse](https://docs.ucloud.cn/modelverse/README) 旨在为客户提供快速搭建 AGI 应用的能力。仅需一个 API Key，即可轻松接入 OpenAI、Gemini 兼容的 API 接口，快速构建您的专属 AGI 应用。[前往 ModelVerse 控制台创建 API Key](https://console.ucloud.cn/modelverse/experience/api-keys)
+![image](/images/appconf_model2.png)
 
 ### 通道配置（配置钉钉机器人 Client ID 与 Client Secret）
-1. 在应用管理的通道配置输入框中，输入此前在钉钉开发者平台获取的Client ID和Client Secret。
-2. 点击应用并确认操作，等待几十秒完成配置；
-3. 等待几十秒后查看状态，确保你的钉钉通道显示**运行中**。
+1. 在应用管理的**通道配置**区域，点击**添加**按钮，选择**钉钉**通道。
+2. 在弹出的配置框中，输入此前在钉钉开发者平台获取的 Client ID 和 Client Secret，点击**确认**完成添加。
+![image](/images/dingding_channel.png)
+3. 等待几十秒后查看状态，确保你添加的钉钉通道显示**运行中**。
+![image](/images/feishu_status.png)
 
 
 ## 在钉钉中与钉钉机器人互动
-配置钉钉机器人的Client ID与Client Secret之后，您可以在钉钉软件中尝试和已经打通OpenClaw的钉钉机器人进行单独聊天。
-首先在钉钉软件的搜索框中，输入前面步骤中创建的钉钉机器人的“应用名称”，添加之后即可开始对话。如果钉钉机器人能够以AI的方式对话，则说明您已经成功完成OpenClaw应用接入钉钉机器人。
+模型配置和通道配置完成后，即可在钉钉软件中与接入 OpenClaw 的机器人进行互动。
+在钉钉软件的搜索框中，输入前面步骤中创建的钉钉机器人的"应用名称"，添加之后即可开始对话。如果钉钉机器人能够以AI的方式对话，则说明您已经成功完成OpenClaw应用接入钉钉机器人。

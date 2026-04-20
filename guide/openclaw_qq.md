@@ -4,13 +4,13 @@
 ## 概述
 本文主要介绍在UCloud轻量应用云主机中部署完成OpenClaw后如何配置接入QQ 机器人。
 
-当前文档仅适配预装OpenClaw-2026.2.17及以上版本的应用镜像，您可以在UCloud控制台轻量应用云主机详情页进行版本确认。
+当前文档仅适配OpenClaw最新版应用镜像，您可以在UCloud控制台轻量应用云主机详情页进行版本确认。
 ![image](/images/appconf_os.png)
 
 ## 前置准备工作
 在正式开始为OpenClaw(Clawdbot)配置接入QQ之前，请您依次检查如下事项是否准备完成：
 1. 您已经拥有一个完成实名认证的腾讯 QQ 账号。
-2. 您已经购买预装OpenClaw且镜像版本2026.2.17及以上版本的UCloud轻量应用云主机。
+2. 您已经购买预装OpenClaw最新应用镜像的轻量应用云主机。
 
 ## 创建 QQBot 机器人 
 1. 前往[QQ 开放平台](https://q.qq.com/qqbot/openclaw/login.html)，需使用QQ扫码登陆并完成注册。
@@ -32,10 +32,11 @@
 
 
 ### 通道配置（配置 QQ 机器人 AppID 和 AppSecret）
-1. 在应用管理的通道配置输入框中，输入此前在 QQ 开放平台获取的QQBot机器人 AppID和AppSecret；
+1. 在应用管理的**通道配置**区域，点击**添加**按钮，选择 **QQ** 通道。
+2. 在弹出的配置框中，输入此前在 QQ 开放平台获取的 QQBot 机器人 AppID 和 AppSecret，点击**确认**完成添加。
 ![image](/images/tencentqq5.png)
-2. 点击应用并确认操作，等待几十秒完成配置；
-3. 等待几十秒后查看状态，确保你的QQ通道显示**运行中**。
+3. 等待几十秒后查看状态，确保你添加的 QQ 通道显示**运行中**。
+![image](/images/feishu_status.png)
 
 
 ## 与 QQ 机器人进行交互
