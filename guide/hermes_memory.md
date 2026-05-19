@@ -36,7 +36,7 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 
 在弹出的配置窗口中，第一步为绑定数据库：
 
-![image](/images/hermes_memory_step1_filled.png)
+![image](/images/hermes_memory_step1.png)
 
 **配置项说明**：
 
@@ -62,7 +62,7 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 
 填写LLM服务的相关信息：
 
-![image](/images/hermes_memory_step2_filled.png)
+![image](/images/hermes_memory_step2.png)
 
 **配置项说明**：
 
@@ -87,8 +87,6 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 配置成功后，记忆管理页面将显示当前运行状态：
 
 ![image](/images/hermes_memory_done.png)
-
-**基础信息**：
 
 | 信息项 | 说明 |
 |--------|------|
