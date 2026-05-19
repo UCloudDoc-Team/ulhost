@@ -15,8 +15,7 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 
 **前置条件**：
 
-!>
-- 需要创建UCloud PostgreSQL 15.7及以上版本实例
+!> - 需要创建UCloud PostgreSQL 15.7及以上版本实例
 - PostgreSQL实例需与轻量应用云主机处于相同VPC
 - 开启功能前请先联系技术支持开启PostgreSQL超级管理员权限，并确保该数据库正常运行
 
