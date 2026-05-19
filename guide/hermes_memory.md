@@ -58,10 +58,6 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 
 数据库绑定完成后，进入第二步LLM服务配置：
 
-![image](/images/hermes_memory_step2_empty.png)
-
-填写LLM服务的相关信息：
-
 ![image](/images/hermes_memory_step2.png)
 
 **配置项说明**：
