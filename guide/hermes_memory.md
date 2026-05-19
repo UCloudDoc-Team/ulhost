@@ -16,7 +16,7 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 **前置条件**：
 - 需要创建UCloud PostgreSQL 15.7及以上版本实例
 - PostgreSQL实例需与轻量应用云主机处于相同VPC
-- 开启功能前请先联系技术支持开启PostgreSQL超级管理员权限
+- 开启功能前请先联系技术支持开启PostgreSQL超级管理员权限，并确保该数据库正常运行
 
 ---
 
@@ -24,9 +24,9 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 
 选择相应的轻量应用云主机并进入详情页，在顶部Tab栏点击**记忆管理**。
 
-![image](/images/hermes_memory_content.png)
+![image](/images/hermes_memory_entry.png)
 
-进入记忆管理页面后，点击**立即启用**按钮开始配置。
+进入记忆管理页面后，可以看到DBMemory智能记忆增强的配置入口，点击**立即启用**按钮开始配置。
 
 ---
 
@@ -34,9 +34,9 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 
 ### 第一步：绑定数据库
 
-在弹出的配置窗口中，完成数据库绑定配置：
+在弹出的配置窗口中，第一步为绑定数据库：
 
-![image](/images/hermes_memory_config_step1.png)
+![image](/images/hermes_memory_step1_filled.png)
 
 **配置项说明**：
 
@@ -56,15 +56,19 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 
 ### 第二步：LLM服务配置
 
-数据库绑定完成后，配置LLM服务：
+数据库绑定完成后，进入第二步LLM服务配置：
 
-![image](/images/hermes_memory_config_step2_filled.png)
+![image](/images/hermes_memory_step2_empty.png)
+
+填写LLM服务的相关信息：
+
+![image](/images/hermes_memory_step2_filled.png)
 
 **配置项说明**：
 
 | 配置项 | 说明 |
 |--------|------|
-| 模型 | 填写模型ID（如：gpt-4、gpt-4o-mini等） |
+| 模型 | 填写模型ID（如：gpt-4o-mini、gpt-4等） |
 | API Key | 填写LLM服务的API Key |
 | API Endpoint | 填写API端点地址，以http://或https://开头 |
 
@@ -72,7 +76,9 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 1. 输入模型ID
 2. 输入API Key
 3. 输入API Endpoint
-4. 点击**确定**按钮完成配置
+4. 点击**确定**按钮
+
+⚠️ **注意**：点击确定后，系统会在后台执行配置任务，**请耐心等待约30-60秒**，不要关闭页面。配置完成后页面会自动更新状态。
 
 ---
 
@@ -80,7 +86,7 @@ DBMemory智能记忆增强是Hermes镜像提供的高级记忆管理功能，通
 
 配置成功后，记忆管理页面将显示当前运行状态：
 
-![image](/images/hermes_memory_latest.png)
+![image](/images/hermes_memory_done.png)
 
 **基础信息**：
 
