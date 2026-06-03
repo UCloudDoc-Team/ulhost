@@ -1,6 +1,4 @@
-# AI应用专区
-
-# 云上OpenClaw(Clawdbot)快速接入飞书指南
+# 云上OpenClaw快速接入飞书
 ## 概述
 本文主要介绍在UCloud轻量应用云主机中部署完成OpenClaw后如何配置接入飞书机器人。
 
