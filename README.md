@@ -18,7 +18,7 @@
      * 套餐定价
          * [常规专区](/ulhost/buy/price/common)
          * [跨境电商专区](/ulhost/buy/price/cross)
-         * [套餐外超额流量定价](/ulhost/buy/price/traffic)
+         * [常规专区超额流量定价](/ulhost/buy/price/traffic)
      * [资源过期回收](/ulhost/buy/recycle)
 * 操作指南
      * 跨境电商专区
